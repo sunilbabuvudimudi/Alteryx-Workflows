@@ -1,0 +1,1700 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.2">
+  <Nodes>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="474" width="1488" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Batch processing of Index</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="202" g="228" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="258" width="1056" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Batch processing of Funds</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="254" g="226" b="254" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="318" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input3</Name>
+          <Abbrev>I</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Month" />
+                <Field name="Mutual Fund" />
+                <Field name="Type" />
+                <Field name="Index 1" />
+                <Field name="Index 2" />
+                <Field name="Index 3" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>January</c>
+                  <c>FT1 A</c>
+                  <c>A</c>
+                  <c>DowJones</c>
+                  <c>SP500</c>
+                  <c />
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>I Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Mutual Fund" size="5" source="TextInput:" type="String" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Index Comparison.xlsx
+Query=`Funds$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Date" />
+            <Field name="FT1 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT2 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT3 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT4 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT5 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT6 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT7 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT8 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT9 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT10 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT11 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT12 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT13 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT14 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT15 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT16 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT17 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT18 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT19 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT20 A" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT1 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT2 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT3 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT4 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT5 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT6 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT7 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT8 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT9 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT10 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT11 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT12 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT13 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT14 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT15 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT16 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT17 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT18 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT19 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+            <Field name="FT20 Advisor" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="138" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Date" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Date" selected="False" />
+            <Field field="FT1 A" selected="True" />
+            <Field field="FT2 A" selected="True" />
+            <Field field="FT3 A" selected="True" />
+            <Field field="FT4 A" selected="True" />
+            <Field field="FT5 A" selected="True" />
+            <Field field="FT6 A" selected="True" />
+            <Field field="FT7 A" selected="True" />
+            <Field field="FT8 A" selected="True" />
+            <Field field="FT9 A" selected="True" />
+            <Field field="FT10 A" selected="True" />
+            <Field field="FT11 A" selected="True" />
+            <Field field="FT12 A" selected="True" />
+            <Field field="FT13 A" selected="True" />
+            <Field field="FT14 A" selected="True" />
+            <Field field="FT15 A" selected="True" />
+            <Field field="FT16 A" selected="True" />
+            <Field field="FT17 A" selected="True" />
+            <Field field="FT18 A" selected="True" />
+            <Field field="FT19 A" selected="True" />
+            <Field field="FT20 A" selected="True" />
+            <Field field="FT1 Advisor" selected="True" />
+            <Field field="FT2 Advisor" selected="True" />
+            <Field field="FT3 Advisor" selected="True" />
+            <Field field="FT4 Advisor" selected="True" />
+            <Field field="FT5 Advisor" selected="True" />
+            <Field field="FT6 Advisor" selected="True" />
+            <Field field="FT7 Advisor" selected="True" />
+            <Field field="FT8 Advisor" selected="True" />
+            <Field field="FT9 Advisor" selected="True" />
+            <Field field="FT10 Advisor" selected="True" />
+            <Field field="FT11 Advisor" selected="True" />
+            <Field field="FT12 Advisor" selected="True" />
+            <Field field="FT13 Advisor" selected="True" />
+            <Field field="FT14 Advisor" selected="True" />
+            <Field field="FT15 Advisor" selected="True" />
+            <Field field="FT16 Advisor" selected="True" />
+            <Field field="FT17 Advisor" selected="True" />
+            <Field field="FT18 Advisor" selected="True" />
+            <Field field="FT19 Advisor" selected="True" />
+            <Field field="FT20 Advisor" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Date" />
+            <Field name="Name" size="12" source="Transpose:" type="String" />
+            <Field name="Value" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="318" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Mutual Fund" order="Ascending" />
+            <Field field="Date" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Mutual Fund - Ascending
+Date - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Date" />
+            <Field name="Mutual Fund" size="12" source="Transpose:" type="String" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Mutual Fund" order="Ascending" />
+            <Field field="Date" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" rename="Mutual Fund" />
+            <SelectField field="Value" selected="True" rename="Return" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Date" />
+            <Field name="Mutual Fund" size="12" source="Transpose:" type="String" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="522" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Mutual Fund" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Mutual Fund" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Mutual Fund" selected="False" rename="Right_Mutual Fund" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Mutual Fund" size="5" source="TextInput:" type="String" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Mutual Fund" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Mutual Fund" size="5" source="TextInput:" type="String" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Mutual Fund" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Mutual Fund" size="12" source="Transpose:" type="String" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Mutual Fund" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="618" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Return</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-08-12 11:12:40</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>NULL</Operand>
+              <StartDate>2020-08-12 11:12:40</StartDate>
+              <EndDate>2020-08-12 11:12:40</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Return])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Mutual Fund" size="5" source="TextInput:" type="String" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Mutual Fund" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Mutual Fund" size="5" source="TextInput:" type="String" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Mutual Fund" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" field="Date" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Date = DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Mutual Fund" size="12" source="Transpose:" type="String" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="714" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Mutual Fund" size="5" source="TextInput:" type="String" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Funds$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="810" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF" field="Return" size="8" type="Double" />
+            <FormulaField expression="IF [Return]==0 THEN 10000 ELSE Null() ENDIF" field="Investment" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Return = IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF
+Investment = IF [Return]...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Mutual Fund" size="5" source="TextInput:" type="String" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Return" source="Formula: IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF" type="Double" />
+            <Field name="Investment" source="Formula: IF [Return]==0 THEN 10000 ELSE Null() ENDIF" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="894" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>Date</UpdateField_Name>
+          <CreateField_Name>Month1</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'m...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Mutual Fund" size="5" source="TextInput:" type="String" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="Formula: IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF" type="Double" />
+            <Field name="Investment" source="Formula: IF [Return]==0 THEN 10000 ELSE Null() ENDIF" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1002" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>Investment</UpdateField_Name>
+          <CreateField_Name>Month1</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])</Expression>
+          <GroupByFields>
+            <Field field="Mutual Fund" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Mutual Fund" size="5" source="TextInput:" type="String" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="Formula: IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF" type="Double" />
+            <Field description="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" name="Investment" source="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Mutual Fund" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1614" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output19</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="510" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Control Parameter (20)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="522" y="150" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Index Comparison.xlsx
+Query=`Index$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Date" />
+            <Field name="SP500" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+            <Field name="DowJones" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+            <Field name="MSCI" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+            <Field name="Lipper GNMA" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+            <Field name="SP500 Utilities Index" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+            <Field name="Bloomberg Barclays US Government Index" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+            <Field name="CPI" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+            <Field name="Russell 1000" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="138" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Date" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Date" selected="False" />
+            <Field field="SP500" selected="True" />
+            <Field field="DowJones" selected="True" />
+            <Field field="MSCI" selected="True" />
+            <Field field="Lipper GNMA" selected="True" />
+            <Field field="SP500 Utilities Index" selected="True" />
+            <Field field="Bloomberg Barclays US Government Index" selected="True" />
+            <Field field="CPI" selected="True" />
+            <Field field="Russell 1000" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Date" />
+            <Field name="Name" size="38" source="Transpose:" type="String" />
+            <Field name="Value" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" rename="Index" />
+            <SelectField field="Value" selected="True" rename="Return" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Date" />
+            <Field name="Index" size="38" source="Transpose:" type="String" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="318" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Index" order="Ascending" />
+            <Field field="Date" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Index - Ascending
+Date - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Date" />
+            <Field name="Index" size="38" source="Transpose:" type="String" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Index" order="Ascending" />
+            <Field field="Date" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="426" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" field="Date" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Date = DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Index" size="38" source="Transpose:" type="String" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="786" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Index" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Index" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Index" selected="False" rename="Right_Index" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Index" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Index" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Index" size="38" source="Transpose:" type="String" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Index" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Mutual Fund" selected="False" />
+            <SelectField field="Type" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="522" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Month" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Month" selected="False" />
+            <Field field="Index 1" selected="True" />
+            <Field field="Index 2" selected="True" />
+            <Field field="Index 3" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Name" size="7" source="Transpose:" type="String" />
+            <Field name="Value" size="8" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="618" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="False" />
+            <SelectField field="Value" selected="True" rename="Index" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="714" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Index</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-08-12 12:59:22</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2020-08-12 12:59:22</StartDate>
+              <EndDate>2020-08-12 12:59:22</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Index])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings>
+        <Position x="1014" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Ranges">1</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Mutual Fund" size="5" source="TextInput:" type="String" />
+            <Field name="Type" size="1" source="TextInput:" type="String" />
+            <Field name="Index 1" size="8" source="TextInput:" type="String" />
+            <Field name="Index 2" size="5" source="TextInput:" type="String" />
+            <Field name="Index 3" source="TextInput:" type="Bool" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="Formula: IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF" type="Double" />
+            <Field name="Investment" source="Formula: IF [Return]==0 THEN 10000 ELSE Null() ENDIF" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="SelectRecords.yxmc" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1098" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Mutual Fund" selected="False" />
+            <SelectField field="Type" selected="False" />
+            <SelectField field="Index 1" selected="False" />
+            <SelectField field="Index 2" selected="False" />
+            <SelectField field="Index 3" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="Formula: IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF" type="Double" />
+            <Field name="Investment" source="Formula: IF [Return]==0 THEN 10000 ELSE Null() ENDIF" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1170" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Month" selected="False" rename="Source_Month" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="Formula: IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF" type="Double" />
+            <Field name="Investment" source="Formula: IF [Return]==0 THEN 10000 ELSE Null() ENDIF" type="Double" />
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1242" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="(Multiple Sources)" type="Double" />
+            <Field name="Investment" source="Formula: IF [Return]==0 THEN 10000 ELSE Null() ENDIF" type="Double" />
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1014" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Date" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Mutual Fund" selected="False" input="Left_" />
+                <SelectField field="Left_Type" selected="False" input="Left_" />
+                <SelectField field="Left_Index 1" selected="False" input="Left_" />
+                <SelectField field="Left_Index 2" selected="False" input="Left_" />
+                <SelectField field="Left_Index 3" selected="False" input="Left_" />
+                <SelectField field="Left_Return" selected="False" input="Left_" />
+                <SelectField field="Left_Investment" selected="False" input="Left_" />
+                <SelectField field="Right_Month" selected="False" rename="Right_Month" input="Right_" />
+                <SelectField field="Right_Date" selected="False" rename="Right_Date" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Date" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Date" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+            <Field name="Date" source="Formula: DateTimeTrim(DateTimeAdd([Date],0,'months'),'lastofmonth')" type="Date" />
+            <Field name="Return" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\Index Comparison.xlsx|||`Index$`" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Date" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1326" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>Investment</UpdateField_Name>
+          <CreateField_Name>Month1</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])</Expression>
+          <GroupByFields>
+            <Field field="Index" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="(Multiple Sources)" type="Double" />
+            <Field description="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" name="Investment" source="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" type="Double" />
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Index" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1158" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Mutual Fund" selected="True" rename="Item" />
+            <SelectField field="Type" selected="False" />
+            <SelectField field="Index 1" selected="False" />
+            <SelectField field="Index 2" selected="False" />
+            <SelectField field="Index 3" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Item" size="5" source="TextInput:" type="String" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="Formula: IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF" type="Double" />
+            <Field description="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" name="Investment" source="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Item" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1506" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>Custom</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="Month" size="7" source="TextInput:" type="String" column="1" />
+                <Field name="Index" size="8" source="TextInput:" type="V_String" column="2" />
+                <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" column="3" />
+                <Field name="Return" source="(Multiple Sources)" type="Double" column="4" />
+                <Field description="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" name="Investment" source="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" type="Double" column="5" />
+                <Field name="Financial Product" size="1073741823" source="Formula: &quot;Index&quot;" type="V_WString" column="6" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="Month" size="7" source="TextInput:" type="String" column="1" />
+                <Field name="Item" size="5" source="TextInput:" type="String" column="2" />
+                <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" column="3" />
+                <Field name="Return" source="Formula: IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF" type="Double" column="4" />
+                <Field description="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" name="Investment" source="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" type="Double" column="5" />
+                <Field name="Financial Product" size="1073741823" source="Formula: &quot;Mutual Fund&quot;" type="V_WString" column="6" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Item" size="8" source="TextInput:" type="V_String" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="(Multiple Sources)" type="Double" />
+            <Field description="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" name="Investment" source="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" type="Double" />
+            <Field name="Financial Product" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1410" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Index&quot;" field="Financial Product" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Financial Product = "Index"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="(Multiple Sources)" type="Double" />
+            <Field description="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" name="Investment" source="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" type="Double" />
+            <Field name="Index" size="8" source="TextInput:" type="V_String" />
+            <Field name="Financial Product" size="1073741823" source="Formula: &quot;Index&quot;" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Index" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1278" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Mutual Fund&quot;" field="Financial Product" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Financial Product = "Mutual Fund"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" size="7" source="TextInput:" type="String" />
+            <Field name="Item" size="5" source="TextInput:" type="String" />
+            <Field description="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" name="Date" source="Formula: IIF(ISNULL([Date]),DateTimeTrim(DateTimeAdd([Row+1:Date],0,'months'),'firstofmonth'),[Date])" type="Date" />
+            <Field name="Return" source="Formula: IF ISNULL([Return]) THEN 0 ELSE [Return] ENDIF" type="Double" />
+            <Field description="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" name="Investment" source="Formula: IIF(ISNULL([Investment]),[Row-1:Investment]*(1+([Return]/100)),[Investment])" type="Double" />
+            <Field name="Financial Product" size="1073741823" source="Formula: &quot;Mutual Fund&quot;" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Item" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="210" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Sunil</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Action" />
+      <Destination ToolID="10" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="44" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Join" />
+      <Destination ToolID="44" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Question" />
+      <Destination ToolID="21" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="True" />
+      <Destination ToolID="27" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="True" />
+      <Destination ToolID="42" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="44" Connection="Join" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (20)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Multi Row Funds and Index Macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="21" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>False</ReplaceText>
+              <Destination>10/@joinByRecordPos</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (3)</Description>
+              <Name>Macro Input (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (19)</Description>
+              <Name>Macro Output (19)</Name>
+              <ToolId value="19" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (20)</Description>
+              <Name>Control Parameter (20)</Name>
+              <ToolId value="20" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (20)</Name>
+            <Description>Control Parameter (20)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+        <Tool ToolId="40" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

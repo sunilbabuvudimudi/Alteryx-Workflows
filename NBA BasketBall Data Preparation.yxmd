@@ -1,0 +1,1190 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.2">
+  <Nodes>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="678" y="546" width="420" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Players change teams. This tile will capture the latest team the player belongs to.
+Use case: changing measures
+Latest transaction by a customer. 
+
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="810" y="402" width="84" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Players</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="810" y="282" width="84" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Stages</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="810" y="174" width="84" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Seasons
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="810" y="54" width="84" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Team Table</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NBA data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="League" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="Season" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="Stage" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="Player" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="Team" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="GP" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="MIN" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="FGM" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="FGA" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="3PM" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="3PA" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="FTM" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="FTA" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="TOV" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="PF" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="ORB" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="DRB" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="REB" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="AST" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="STL" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="BLK" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="PTS" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="birth_year" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="birth_month" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="birth_date" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="height" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="height_cm" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="weight" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="weight_kg" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="nationality" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+            <Field name="high_school" size="254" source="File: C:\Users\sahchint\OneDrive - Capgemini\Desktop\Sunil\Alteryx\NBA data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="126" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Season</Field>
+          <ErrorHandling>Warn</ErrorHandling>
+          <RootName>Season_Ending</RootName>
+          <Delimeters value="-" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="198" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber((TrimLeft([Season_Ending2])))" field="Season_Ending2" size="254" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Season_Ending2 = ToNumber((TrimLeft([Season_Ending2])))
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team" selected="True" />
+            <SelectField field="Season_Ending2" selected="False" rename="Season_Ending" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="474" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Team" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="306" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>birth_date</InputFieldName>
+          <Language>English</Language>
+          <Format>dd-Mon-yy</Format>
+          <OutputFieldName>Birth_Date</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Convert birth_date From:
+Custom to Date format</AnnotationText>
+          <DefaultAnnotationText>Convert birth_date From:
+Custom</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="822" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\sahchint\AppData\Local\Temp\1\Engine_10904_27e5d4a390db461b9ac96d3ef628b7e3_\Engine_19444_6481fdc8a09b4f0ca7395a83f270385f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="666" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="MD5_UNICODE([Team])" field="Team_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="LDTS" size="19" type="DateTime" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Team_ID = MD5_UNICODE([Team])
+LDTS = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="League" selected="False" />
+            <SelectField field="Season_Ending2" selected="True" rename="Season_Ending" type="Int32" size="4" />
+            <SelectField field="Season" selected="False" />
+            <SelectField field="Stage" selected="False" />
+            <SelectField field="Player" selected="True" />
+            <SelectField field="Team" selected="True" />
+            <SelectField field="GP" selected="False" rename="Games_Palyed" />
+            <SelectField field="MIN" selected="False" rename="Minutes_Played" />
+            <SelectField field="FGM" selected="False" rename="Field_Goals_Made" />
+            <SelectField field="FGA" selected="False" rename="Field_Goals_Attempts" />
+            <SelectField field="3PM" selected="False" rename="3Points_Made" />
+            <SelectField field="3PA" selected="False" rename="3Points_Attempts" />
+            <SelectField field="FTM" selected="False" rename="Free_Throws_Made" />
+            <SelectField field="FTA" selected="False" rename="Free_Throws_Attempts" />
+            <SelectField field="TOV" selected="False" rename="Turnovers" />
+            <SelectField field="PF" selected="False" rename="Personal_Fouls" />
+            <SelectField field="ORB" selected="False" rename="Offensive_Rebounds" />
+            <SelectField field="DRB" selected="False" rename="Defensive_Rebounds" />
+            <SelectField field="REB" selected="False" rename="Rebounds" />
+            <SelectField field="AST" selected="False" rename="Assists" />
+            <SelectField field="STL" selected="False" rename="Steals" />
+            <SelectField field="BLK" selected="False" rename="Blocks" />
+            <SelectField field="PTS" selected="False" rename="Points" />
+            <SelectField field="birth_year" selected="False" rename="Birth_Year" />
+            <SelectField field="birth_month" selected="False" rename="Birth_Month" />
+            <SelectField field="birth_date" selected="False" />
+            <SelectField field="height" selected="False" />
+            <SelectField field="height_cm" selected="False" rename="Height" />
+            <SelectField field="weight" selected="False" />
+            <SelectField field="weight_kg" selected="False" rename="Weight" />
+            <SelectField field="nationality" selected="False" rename="Nationality" />
+            <SelectField field="high_school" selected="False" />
+            <SelectField field="Season_Ending1" selected="False" />
+            <SelectField field="Birth_Date2" selected="False" rename="Birth_Date" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="474" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Season_Ending" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="558" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="MD5_UNICODE([Season_Ending])" field="Season_Ending_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="LDTS" size="19" type="DateTime" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Season_Ending_ID = MD5_UNICODE([Season_Ending])
+LDTS = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="822" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\sahchint\AppData\Local\Temp\1\Engine_10904_27e5d4a390db461b9ac96d3ef628b7e3_\Engine_19444_a9d97ded14944467b0e9fef2be9831e4_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="League" selected="False" />
+            <SelectField field="Season_Ending2" selected="False" rename="Season_Ending" />
+            <SelectField field="Season" selected="False" />
+            <SelectField field="Stage" selected="True" />
+            <SelectField field="Player" selected="False" />
+            <SelectField field="Team" selected="False" />
+            <SelectField field="GP" selected="False" rename="Games_Palyed" />
+            <SelectField field="MIN" selected="False" rename="Minutes_Played" />
+            <SelectField field="FGM" selected="False" rename="Field_Goals_Made" />
+            <SelectField field="FGA" selected="False" rename="Field_Goals_Attempts" />
+            <SelectField field="3PM" selected="False" rename="3Points_Made" />
+            <SelectField field="3PA" selected="False" rename="3Points_Attempts" />
+            <SelectField field="FTM" selected="False" rename="Free_Throws_Made" />
+            <SelectField field="FTA" selected="False" rename="Free_Throws_Attempts" />
+            <SelectField field="TOV" selected="False" rename="Turnovers" />
+            <SelectField field="PF" selected="False" rename="Personal_Fouls" />
+            <SelectField field="ORB" selected="False" rename="Offensive_Rebounds" />
+            <SelectField field="DRB" selected="False" rename="Defensive_Rebounds" />
+            <SelectField field="REB" selected="False" rename="Rebounds" />
+            <SelectField field="AST" selected="False" rename="Assists" />
+            <SelectField field="STL" selected="False" rename="Steals" />
+            <SelectField field="BLK" selected="False" rename="Blocks" />
+            <SelectField field="PTS" selected="False" rename="Points" />
+            <SelectField field="birth_year" selected="False" rename="Birth_Year" />
+            <SelectField field="birth_month" selected="False" rename="Birth_Month" />
+            <SelectField field="birth_date" selected="False" />
+            <SelectField field="height" selected="False" />
+            <SelectField field="height_cm" selected="False" rename="Height" />
+            <SelectField field="weight" selected="False" />
+            <SelectField field="weight_kg" selected="False" rename="Weight" />
+            <SelectField field="nationality" selected="False" rename="Nationality" />
+            <SelectField field="high_school" selected="False" />
+            <SelectField field="Season_Ending1" selected="False" />
+            <SelectField field="Birth_Date2" selected="False" rename="Birth_Date" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="474" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Stage" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="822" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\sahchint\AppData\Local\Temp\1\Engine_10904_27e5d4a390db461b9ac96d3ef628b7e3_\Engine_19444_4022ab3b1a2f4accbc482462ed423835_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="League" selected="False" />
+            <SelectField field="Season_Ending2" selected="False" rename="Season_Ending" />
+            <SelectField field="Season" selected="False" />
+            <SelectField field="Stage" selected="False" />
+            <SelectField field="Player" selected="True" />
+            <SelectField field="Team" selected="False" />
+            <SelectField field="GP" selected="False" rename="Games_Palyed" />
+            <SelectField field="MIN" selected="False" rename="Minutes_Played" />
+            <SelectField field="FGM" selected="False" rename="Field_Goals_Made" />
+            <SelectField field="FGA" selected="False" rename="Field_Goals_Attempts" />
+            <SelectField field="3PM" selected="False" rename="3Points_Made" />
+            <SelectField field="3PA" selected="False" rename="3Points_Attempts" />
+            <SelectField field="FTM" selected="False" rename="Free_Throws_Made" />
+            <SelectField field="FTA" selected="False" rename="Free_Throws_Attempts" />
+            <SelectField field="TOV" selected="False" rename="Turnovers" />
+            <SelectField field="PF" selected="False" rename="Personal_Fouls" />
+            <SelectField field="ORB" selected="False" rename="Offensive_Rebounds" />
+            <SelectField field="DRB" selected="False" rename="Defensive_Rebounds" />
+            <SelectField field="REB" selected="False" rename="Rebounds" />
+            <SelectField field="AST" selected="False" rename="Assists" />
+            <SelectField field="STL" selected="False" rename="Steals" />
+            <SelectField field="BLK" selected="False" rename="Blocks" />
+            <SelectField field="PTS" selected="False" rename="Points" />
+            <SelectField field="birth_year" selected="False" rename="Birth_Year" />
+            <SelectField field="birth_month" selected="False" rename="Birth_Month" />
+            <SelectField field="birth_date" selected="False" />
+            <SelectField field="height" selected="False" />
+            <SelectField field="height_cm" selected="True" rename="Height" />
+            <SelectField field="weight" selected="False" />
+            <SelectField field="weight_kg" selected="True" rename="Weight" />
+            <SelectField field="nationality" selected="True" rename="Nationality" />
+            <SelectField field="high_school" selected="False" />
+            <SelectField field="Season_Ending1" selected="False" />
+            <SelectField field="Birth_Date2" selected="True" rename="Birth_Date" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="474" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Player" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="570" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="MD5_UNICODE([Player])" field="Player_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="LDTS" size="19" type="DateTime" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Player_ID = MD5_UNICODE([Player])
+LDTS = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="822" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\sahchint\AppData\Local\Temp\1\Engine_10904_27e5d4a390db461b9ac96d3ef628b7e3_\Engine_19444_8697867395ed42f299a5736b57663341_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="666" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="MD5_UNICODE([Stage])" field="Season_Ending_ID" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="LDTS" size="19" type="DateTime" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Season_Ending_ID = MD5_UNICODE([Stage])
+LDTS = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="474" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Season_Ending" />
+            <Field field="Player" />
+            <Field field="Team" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="582" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Player" order="Ascending" />
+            <Field field="Season_Ending" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Player - Ascending
+Season_Ending - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+        <Position x="678" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Method>UniqueValue</Method>
+          <UniqueValue>
+            <UniqueFields>
+              <Field field="Team" />
+            </UniqueFields>
+            <DontSort value="True" />
+          </UniqueValue>
+          <GroupFields orderChanged="False">
+            <Field name="Player" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="774" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Tile_Num" selected="True" rename="Latest" />
+            <SelectField field="Tile_SequenceNum" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="870" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Latest" action="Max" rename="Max_Latest" />
+            <SummarizeField field="Player" action="GroupBy" rename="Player" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="942" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Player" />
+            <Field field="Max_Latest" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Player" />
+            <Field field="Latest" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Max_Latest" selected="False" input="Left_" />
+                <SelectField field="Right_Player" selected="False" rename="Right_Player" input="Right_" />
+                <SelectField field="Right_Latest" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1038" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Player" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="906" y="54" width="36" height="432" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>P
+R
+I
+M
+A
+R
+Y 
+
+T
+A
+B
+L
+E
+S</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="League" selected="False" />
+            <SelectField field="Season_Ending2" selected="True" rename="Season_Ending" />
+            <SelectField field="Season" selected="False" />
+            <SelectField field="Stage" selected="False" />
+            <SelectField field="Player" selected="False" />
+            <SelectField field="Team" selected="False" />
+            <SelectField field="GP" selected="False" rename="Games_Palyed" />
+            <SelectField field="MIN" selected="False" rename="Minutes_Played" />
+            <SelectField field="FGM" selected="False" rename="Field_Goals_Made" />
+            <SelectField field="FGA" selected="False" rename="Field_Goals_Attempts" />
+            <SelectField field="3PM" selected="False" rename="3Points_Made" />
+            <SelectField field="3PA" selected="False" rename="3Points_Attempts" />
+            <SelectField field="FTM" selected="False" rename="Free_Throws_Made" />
+            <SelectField field="FTA" selected="False" rename="Free_Throws_Attempts" />
+            <SelectField field="TOV" selected="False" rename="Turnovers" />
+            <SelectField field="PF" selected="False" rename="Personal_Fouls" />
+            <SelectField field="ORB" selected="False" rename="Offensive_Rebounds" />
+            <SelectField field="DRB" selected="False" rename="Defensive_Rebounds" />
+            <SelectField field="REB" selected="False" rename="Rebounds" />
+            <SelectField field="AST" selected="False" rename="Assists" />
+            <SelectField field="STL" selected="False" rename="Steals" />
+            <SelectField field="BLK" selected="False" rename="Blocks" />
+            <SelectField field="PTS" selected="False" rename="Points" />
+            <SelectField field="birth_year" selected="False" rename="Birth_Year" />
+            <SelectField field="birth_month" selected="False" rename="Birth_Month" />
+            <SelectField field="birth_date" selected="False" />
+            <SelectField field="height" selected="False" />
+            <SelectField field="height_cm" selected="False" rename="Height" />
+            <SelectField field="weight" selected="False" />
+            <SelectField field="weight_kg" selected="False" rename="Weight" />
+            <SelectField field="nationality" selected="False" rename="Nationality" />
+            <SelectField field="high_school" selected="False" />
+            <SelectField field="Season_Ending1" selected="False" />
+            <SelectField field="Birth_Date2" selected="False" rename="Birth_Date" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1146" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="161" y="509" width="152.0632" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 45</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="186" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="League" selected="True" />
+                <SelectField field="Season_Ending2" selected="True" rename="Season_Ending" type="Int32" size="4" />
+                <SelectField field="Season" selected="False" />
+                <SelectField field="Stage" selected="True" />
+                <SelectField field="Player" selected="True" />
+                <SelectField field="Team" selected="True" />
+                <SelectField field="GP" selected="True" rename="Games_Palyed" />
+                <SelectField field="MIN" selected="True" rename="Minutes_Played" />
+                <SelectField field="FGM" selected="True" rename="Field_Goals_Made" />
+                <SelectField field="FGA" selected="True" rename="Field_Goals_Attempts" />
+                <SelectField field="3PM" selected="True" rename="3Points_Made" />
+                <SelectField field="3PA" selected="True" rename="3Points_Attempts" />
+                <SelectField field="FTM" selected="True" rename="Free_Throws_Made" />
+                <SelectField field="FTA" selected="True" rename="Free_Throws_Attempts" />
+                <SelectField field="TOV" selected="True" rename="Turnovers" />
+                <SelectField field="PF" selected="True" rename="Personal_Fouls" />
+                <SelectField field="ORB" selected="True" rename="Offensive_Rebounds" />
+                <SelectField field="DRB" selected="True" rename="Defensive_Rebounds" />
+                <SelectField field="REB" selected="True" rename="Rebounds" />
+                <SelectField field="AST" selected="True" rename="Assists" />
+                <SelectField field="STL" selected="True" rename="Steals" />
+                <SelectField field="BLK" selected="True" rename="Blocks" />
+                <SelectField field="PTS" selected="True" rename="Points" />
+                <SelectField field="birth_year" selected="False" rename="Birth_Year" />
+                <SelectField field="birth_month" selected="False" rename="Birth_Month" />
+                <SelectField field="birth_date" selected="False" />
+                <SelectField field="height" selected="False" />
+                <SelectField field="height_cm" selected="True" rename="Height" />
+                <SelectField field="weight" selected="False" />
+                <SelectField field="weight_kg" selected="True" rename="Weight" />
+                <SelectField field="nationality" selected="True" rename="Nationality" />
+                <SelectField field="high_school" selected="False" />
+                <SelectField field="Season_Ending1" selected="False" />
+                <SelectField field="Birth_Date2" selected="True" rename="Birth_Date" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Unique" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Unique" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Unique" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Unique" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Unique" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="42" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Join" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Unique" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>NBA BasketBall Data Preparation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
